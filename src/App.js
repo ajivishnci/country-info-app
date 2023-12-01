@@ -8,7 +8,7 @@ const App = () => {
 
   const fetchCountryInfo = async () => {
     try {
-      const response = await fetch(`http://localhost:5000/country/${country}`);
+      const response = await fetch(`https://country-backend-dh8e.onrender.com/${country}`);
       const data = await response.json();
       setCountryInfo(data);
     } catch (error) {
